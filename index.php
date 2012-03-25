@@ -34,6 +34,7 @@ foreach( $widgets as $widget )
 
 function displayLine( $Label, $PanelID, $onButton, $offButton )
 {
+	global $config;
 	$onButtonId  = $PanelID ."-".$onButton;
 	$offButtonId = $PanelID."-".$offButton;
 	echo "<tr>\n";
